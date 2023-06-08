@@ -1,0 +1,105 @@
+// COLOR VARIABLES
+$color-primary: #c69963;
+$color-primary-dark: #b28451;
+
+$color-secondary: #101d2c;
+
+$color-grey-light-1: #f9f7f6;
+$color-grey-light-2: #aaa;
+
+$color-grey-dark-1: #54483a;
+$color-grey-dark-2: #6d5d4b;
+
+// FONT VARIABLES
+$font-primary: "Nunito", sans-serif;
+$font-display: "Josefin Sans", sans-serif;
+
+// break points
+
+$bp--large: 65em;
+$bp--md: 53em;
+$bp--sm: 44em;
+$bp--vsm : 34em;
+$bp--esm:20em;
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+
+  @media screen and (max-width: $bp--large) {
+    font-size: 50%;
+  }
+  @media screen and (max-width: $bp--vsm) {
+    font-size: 45%;
+  }
+}
+
+.mb--sm {
+  margin-bottom: 2rem;
+}
+.mb--md {
+  margin-bottom: 3rem;
+}
+.mb--bg {
+  margin-bottom: 4rem;
+}
+
+.container {
+  font-family: $font-primary;
+  display: grid;
+  grid-template-rows: 80vh min-content 40vw repeat(3, min-content);
+  grid-template-columns: [sidebar-start] 8rem [sidebar-end full-start] minmax(
+      6rem,
+      1fr
+    ) [center-start] repeat(8, [col-start] minmax(min-content, 12rem) [col-end]) [center-end] minmax(
+      6rem,
+      1fr
+    ) [full-end];
+
+  @media screen and (max-width: $bp--md) {
+    grid-template-rows: 6rem 80vh min-content min-content min-content 70vw min-content;
+    grid-template-columns:  [full-start] minmax(
+        6rem,
+        1fr
+      ) [center-start] repeat(
+        8,
+        [col-start] minmax(min-content, 12rem) [col-end]
+      ) [center-end] minmax(6rem, 1fr) [full-end];
+  }
+  @media screen and (max-width: $bp--esm) {
+    grid-template-rows: 6rem 50vh min-content min-content min-content 70vw min-content;
+  }
+
+
+  
+
+  
+}
+
+.btn {
+  background-color: $color-primary;
+  font-family: $font-display;
+  font-size: 1.6rem;
+  border: none;
+  color: white;
+  padding: 1.5rem 2.5rem;
+  box-shadow: 0 1rem 3rem rgba(#000, 0.2);
+  transition: all 0.3s;
+  justify-self: start;
+  align-self: center;
+  text-decoration: none;
+
+  &:hover {
+    cursor: pointer;
+    background-color: $color-primary-dark;
+  }
+}

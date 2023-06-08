@@ -1,0 +1,40 @@
+.features {
+  margin:15rem 0;
+  grid-column: center-start / center-end;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(25rem, 1fr));
+  row-gap: 6rem;
+  column-gap: 4rem;
+
+  align-items: start;
+  
+  @media screen and (max-width: $bp--sm) {
+    margin: 10rem 0;
+  }
+}
+
+
+.feature {
+  display: grid;
+  grid-template-columns: min-content 1fr;
+  row-gap: 1rem;
+  column-gap: 1.6rem;
+
+
+
+  &__icon{
+    width: 4.5rem;
+    height: 4.5rem;
+    fill:$color-primary;
+    grid-row: 1 / span 2;
+    transform: translateY(-1rem);
+  }
+
+  &__text {
+    font-size: 1.4rem;
+    font-family: $font-primary;
+    font-weight: 600;
+    color: $color-grey-dark-2;
+
+  }
+}
