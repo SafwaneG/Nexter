@@ -25,7 +25,7 @@ Overall, this project aims to provide a visually appealing and user-friendly web
 
 ![Alt text](img/desktop.png)
 
-- Table Version:
+- Tablet Version:
 
 ![Alt text](img/tablet.png)
 
