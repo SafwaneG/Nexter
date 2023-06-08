@@ -12,7 +12,7 @@ The website aims to create a seamless experience for users, providing them with 
 
 Overall, this project aims to provide a visually appealing and user-friendly website that effectively showcases available houses and highlights the expertise of the top three realtors, ultimately driving engagement and facilitating potential house sales.
 
-- built With:
+## built With:
 
  ![](https://img.shields.io/badge/html-E34F26?style=for-the-badge&logo=HTML5&logoColor=white)
  ![](https://img.shields.io/badge/CSS-1572B6?style=for-the-badge&logo=CSS3&logoColor=white)
